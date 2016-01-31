@@ -50,7 +50,7 @@ def seleniumScrape():
 #                 print line
             print i,i/15191793.0,t
             if IN:
-                i += 100
+                i += 1000
                 t = 0.5
             else:
                 t += 0.1
