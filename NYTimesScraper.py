@@ -41,8 +41,7 @@ def seleniumScrape():
 				soup = BeautifulSoup(src,"html.parser")
 				del src
 				for li in soup.find_all('li',{"class": "story"}):
-					IN = True
-					summary = cleanUp(li.find("p",{"class":"summary"}))
+\					summary = cleanUp(li.find("p",{"class":"summary"}))
 					div = li.find("div",{"class":"storyMeta"})
 					articleDate = cleanUp(div.find("span",{"class":"dateline"}))
 					author = cleanUp(div.find("span",{"class":"byline"}))
